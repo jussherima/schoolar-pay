@@ -6,17 +6,40 @@
 # Version minimale requise: Flutter 3.10.0
 # ===========================================
 
-echo "========================================"
-echo "       SCHOOLAR PAY - Lancement        "
-echo "========================================"
-echo ""
-
 # Couleurs
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 YELLOW='\033[1;33m'
 RED='\033[0;31m'
+CYAN='\033[0;36m'
+MAGENTA='\033[0;35m'
+WHITE='\033[1;37m'
 NC='\033[0m' # No Color
+
+# ASCII Art Banner
+echo ""
+echo -e "${CYAN}     ╔═══════════════════════════════════════════════════════════════╗${NC}"
+echo -e "${CYAN}     ║${NC}                                                               ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}      ${MAGENTA}     ██╗ ██████╗ ███████╗ ██████╗  █████╗${NC}            ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}      ${MAGENTA}     ██║██╔═══██╗██╔════╝██╔═══██╗██╔══██╗${NC}           ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}      ${MAGENTA}     ██║██║   ██║███████╗██║   ██║███████║${NC}           ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}      ${MAGENTA}██   ██║██║   ██║╚════██║██║   ██║██╔══██║${NC}           ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}      ${MAGENTA}╚█████╔╝╚██████╔╝███████║╚██████╔╝██║  ██║${NC}           ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}      ${MAGENTA} ╚════╝  ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═╝${NC}           ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}                                                               ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}            ${YELLOW} ██████╗ ██████╗ ██████╗ ███████╗${NC}               ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}            ${YELLOW}██╔════╝██╔═══██╗██╔══██╗██╔════╝${NC}               ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}            ${YELLOW}██║     ██║   ██║██║  ██║█████╗${NC}                 ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}            ${YELLOW}██║     ██║   ██║██║  ██║██╔══╝${NC}                 ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}            ${YELLOW}╚██████╗╚██████╔╝██████╔╝███████╗${NC}               ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}            ${YELLOW} ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝${NC}               ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}                                                               ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}         ${WHITE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}            ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}              ${GREEN}🎓 SCHOOLAR PAY - Lancement 🎓${NC}                 ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}         ${WHITE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}            ${CYAN}║${NC}"
+echo -e "${CYAN}     ║${NC}                                                               ${CYAN}║${NC}"
+echo -e "${CYAN}     ╚═══════════════════════════════════════════════════════════════╝${NC}"
+echo ""
 
 MIN_FLUTTER_VERSION="3.10.0"
 
@@ -105,12 +128,12 @@ echo -e "${GREEN}Plateforme detectee: ${PLATFORM}${NC}"
 echo ""
 
 # Menu de sélection
-echo "Choisissez une option:"
-echo "  1) Lancer sur appareil connecte (mobile/emulateur)"
-echo "  2) Lancer sur ${PLATFORM} (desktop)"
-echo "  3) Lancer sur Chrome (web)"
-echo "  4) Afficher les appareils disponibles"
-echo "  5) Quitter"
+echo -e "${WHITE}Choisissez une option:${NC}"
+echo -e "  ${CYAN}1)${NC} Lancer sur appareil connecte (mobile/emulateur)"
+echo -e "  ${CYAN}2)${NC} Lancer sur ${PLATFORM} (desktop)"
+echo -e "  ${CYAN}3)${NC} Lancer sur Chrome (web)"
+echo -e "  ${CYAN}4)${NC} Afficher les appareils disponibles"
+echo -e "  ${CYAN}5)${NC} Quitter"
 echo ""
 read -p "Votre choix [1-5]: " choice
 
@@ -132,7 +155,7 @@ case $choice in
         flutter devices
         ;;
     5)
-        echo "Au revoir!"
+        echo -e "${GREEN}Au revoir! 👋${NC}"
         exit 0
         ;;
     *)
