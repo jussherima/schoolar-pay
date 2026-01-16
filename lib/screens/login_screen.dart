@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../services/database_service.dart';
+import '../widgets/app_logo.dart';
 import 'inscription_screen.dart';
 import 'home_screen.dart';
 
@@ -67,14 +68,8 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const SizedBox(height: 40),
-              const Icon(Icons.school, size: 100, color: Colors.blue),
-              const SizedBox(height: 16),
-              const Text(
-                'Schoolar Pay',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
+              const SizedBox(height: 20),
+              const AppLogoWithText(logoSize: 120),
               const SizedBox(height: 40),
               TextFormField(
                 controller: _cinController,

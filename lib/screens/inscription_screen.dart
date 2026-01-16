@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../services/database_service.dart';
 import '../models/parent.dart';
+import '../widgets/app_logo.dart';
 import 'login_screen.dart';
 
 class InscriptionScreen extends StatefulWidget {
@@ -80,9 +81,9 @@ class _InscriptionScreenState extends State<InscriptionScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const SizedBox(height: 20),
-              const Icon(Icons.person_add, size: 80, color: Colors.blue),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
+              const AppLogo(size: 80),
+              const SizedBox(height: 16),
               TextFormField(
                 controller: _nomController,
                 decoration: const InputDecoration(

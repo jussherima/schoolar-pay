@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#2196F3"/>
+  <circle cx="100" cy="100" r="85" fill="#1976D2"/>
+
+  <!-- Graduation cap -->
+  <polygon points="100,45 40,75 100,105 160,75" fill="#FFC107"/>
+  <rect x="90" y="45" width="20" height="8" fill="#FFC107"/>
+  <ellipse cx="100" cy="105" rx="60" ry="15" fill="#FFB300"/>
+
+  <!-- Tassel -->
+  <line x1="160" y1="75" x2="170" y2="95" stroke="#FF5722" stroke-width="3"/>
+  <circle cx="170" cy="100" r="6" fill="#FF5722"/>
+
+  <!-- Coin/Money symbol -->
+  <circle cx="100" cy="145" r="25" fill="#4CAF50"/>
+  <circle cx="100" cy="145" r="20" fill="#66BB6A"/>
+  <text x="100" y="153" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Ar</text>
+</svg>
